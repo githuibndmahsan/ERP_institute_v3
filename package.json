@@ -1,0 +1,12 @@
+{
+  "name": "erp-institute-v3",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -k -n API,WEB -c blue,green \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\"",
+    "build": "npm --prefix frontend run build",
+    "setup": "npm --prefix backend run prisma:generate && npm --prefix backend run prisma:push && npm --prefix backend run prisma:seed"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

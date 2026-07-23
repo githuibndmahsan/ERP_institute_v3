@@ -1,0 +1,1 @@
+export function PlaceholderAdmin({title,description}){return <><div className="page-head"><div><h1>{title}</h1><p>{description}</p></div></div><div className="panel empty"><h2>{title} foundation ready</h2><p>This module will be implemented in the next fast phase without changing dashboard architecture.</p></div></>}
